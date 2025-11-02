@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+        <link rel="stylesheet" href="../css/css009.css">
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>abra o site em dispositvos diferentes</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/1.png" type="../imagens/adm.png"> <!--aq eu usei em base a iamgem anterior do neymar que é 700x700-->
+
+        <source media="(max-width: 1050px)" srcset="../imagens/neymar.png" type="image/png"> <!--1050 está relativo a imagem anterior que é 1000 pixels sempre botar 50 px a mais que o normal para n ter erro-->
+
+        <img src="../imagens/pele.png" alt="neymar, imagem grande">
+    </picture>
+
+    <h1>Reproduzir com audios</h1>
+    <p>Audio aq ouça um bom dia ai ai</p>
+<audio src="audio.mp3" controls autoplay></audio>
+
+    <H1>Para adicinar Videos</H1>
+    <p>veja um video que peguei do ttk</p>
+
+    <video src="../audios e videos/v.mp4" controls autoplay></video>
+
+    <h1>Videos do yt</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1QSNAEyUdYY?si=cHr-UjWQXlv3pf6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

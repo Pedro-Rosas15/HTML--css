@@ -51,20 +51,35 @@ section {
     padding-left: 30px;
     font-family: var(--fonte3);
 }
+section > p {
+    padding-bottom: 2em;
+}
 .normal {
     background-color: white;
 }
 .imagem {
     background-color: blueviolet;
     color: white;
+    background-attachment: fixed;
 }
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgba(0, 0, 0, 0.151);
     width: 400px;
+    text-shadow: 1px 1px 1px 0px black;
 }
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
+}
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center ;
+    background-size: cover;
+}
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
 }

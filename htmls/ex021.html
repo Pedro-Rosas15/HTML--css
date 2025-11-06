@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #caixa {
+            background-image: url(../imagens/mira.png);
+            position: relative;
+            height: 96vh;
+            background-size: 100% 100%;
+            padding: 10px;
+            background-color: aqua;
+        }
+        #conteudo{
+            background-size: 100% 100%;
+            background-image: url(../imagens/mira.png);
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%; 
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="caixa">
+        <article id="conteudo">
+            
+        </article>
+    </section>
+</body>
+</html>

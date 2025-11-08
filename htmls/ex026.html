@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        
+        <p><label for="inome">Nome</label>
+            <input type="text" name="inome" id="inome" required autocomplete="name"></p>
+
+        <p><label for="iSobrenome">Sobrenome</label> 
+            <input type="text" name="iSobrenome" id="iSobrenome" autocomplete="name"></p>
+
+            <p>
+                <label for="itaxa">Taxa De Imposto</label>
+                <input type="number" name="itaxa" id="itaxa" min="100" max="150000" step="0.01">
+            </p>
+            <p>
+                <label for="iida">Idade/data de nasc.</label>
+                <input type="date" name="" id="">
+            </p>
+
+            <p>
+                <label for="ifone">Telefone</label>
+                <input type="tel" name="ifone" id="ifone" required>
+
+            </p>
+            
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="iemail" id="iemail" required>
+            </p>
+        <p>
+            <label for="isen">Senha</label>
+            <input type="password" name="isen" id="isen" required minlength="8" autocomplete="current-password">
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+</html>

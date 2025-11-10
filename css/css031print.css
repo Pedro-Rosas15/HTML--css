@@ -1,0 +1,37 @@
+@charset "UTF-8" ;
+
+@media print {
+    
+}
+@media screen and (min-width: 768px) and (max-width: 992px) { /*tablet*/
+    body {
+        background-image: url(../imagens/imagens\ cap.25/back-tablet.jpg);
+    }
+    #cell{display: none;}
+    #print{display: none;}
+    #tablet{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+   
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/imagens\ cap.25/back-pc.jpg);
+    }
+    #cell{display: none;}
+    #print{display: none;}
+    #tablet{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/imagens\ cap.25/back-tv.jpg);
+    }
+    #cell{display: none;}
+    #print{display: none;}
+    #tablet{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+}

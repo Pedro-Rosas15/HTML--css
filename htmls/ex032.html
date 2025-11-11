@@ -6,12 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/css032.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/css032pc.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>News Brasil</h1>
-        <i class="material-icons">menu</i>
-        <menu>
+        <i id="buger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="menuu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Politica</a></li>
@@ -36,5 +37,21 @@
             Em Manaus, estabelecemos o Centro de Cooperação Policial Internacional da Amazônia, reunindo nove países sul-americanos”, destacou. Para o presidente, essas plataformas permanentes de cooperação são fundamentais para combater crimes financeiros e o tráfico de drogas, de armas e de pessoas.</p>
         </article>
     </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >=770){
+                menuu.style.display = 'block'
+            } else {
+                menuu.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (menuu.style.display == 'block') {
+                menuu.style.display = 'none'
+            } else {
+                menuu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

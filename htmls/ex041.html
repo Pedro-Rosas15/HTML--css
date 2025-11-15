@@ -5,45 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0%;
+        }
         .container{
             background-color: rgb(76, 173, 124);
             display: flex;
             align-items: flex-start;
             flex-flow: row nowrap;
             padding: 10px;
+            justify-content: center;
         }
         .item {
             color: white;
             background-color: rgb(133, 94, 160);
             border: 2px solid black;
             text-align: center;  
-            flex-basis: 150px;
-            flex-grow: 1;
+            margin: 0px 5px;
+            cursor: pointer;
+        }
+        #a1{
+            flex: 0 1 150px;
+        }
+        #a2{
+            flex: 2 0 150px;
+        }
+        #a3{
+            flex: 1 2 150px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">
-            aaaaaaainnnnnn
+        <div class="item" id="a1">
+            a1
         </div>
-        <div class="item">
+        <div class="item" id="a2">
             a2
         </div>
-        <div class="item">
+        <div class="item" id="a3">
             a3
-        </div>
-        <div class="item">
-            a4
-        </div>
-        <div class="item">
-            a5
-        </div>
-        <div class="item">
-            a6 caguei
-        </div>
-        <div class="item">
-            a7
         </div>
     </div>
 </body>

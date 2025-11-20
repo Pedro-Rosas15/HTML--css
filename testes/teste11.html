@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 150px;
+            grid-template-rows: 80px 40px 1fr 40px;
+            gap: 5px;
+        }
+        .T{
+            background-color: blue;
+            grid-column: 1/-1;
+        }
+        .M{
+            background-color: blueviolet;
+            grid-column: 1/-1;
+        }
+        .P{
+            background-color: chartreuse;
+            grid-column: 1/2;
+            grid-row: 3/-2;
+        }
+        .S{
+            background-color: darkslategrey;
+            grid-column: -2/-1;
+            grid-row: 3/-2;
+
+        }
+        .R{
+            background-color: dodgerblue;
+            grid-column: 1/-1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="T">Topo</div>
+        <div class="M">menu</div>
+        <div class="P">principal</div>
+        <div class="S">secundario</div>
+        <div class="R">rodapé</div>
+    </div>
+    
+</body>
+</html>

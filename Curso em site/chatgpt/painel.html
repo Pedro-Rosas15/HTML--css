@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Painel — Codify</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Codify</div>
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="languages.html">Linguagens</a>
+        <a href="login.html">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h1 id="welcome">Bem-vindo!</h1>
+      <p id="panel-summary">Seu progresso será mostrado aqui.</p>
+
+      <div class="progress-cards">
+        <div class="progress-card">
+          <h3>HTML &amp; CSS</h3>
+          <div class="progress-bar"><div class="progress" id="progress-html" style="width:0%"></div></div>
+          <p id="html-status">0% concluído</p>
+        </div>
+
+        <div class="progress-card">
+          <h3>JavaScript</h3>
+          <div class="progress-bar"><div class="progress" id="progress-js" style="width:0%"></div></div>
+          <p id="js-status">0% concluído</p>
+        </div>
+
+        <div class="progress-card">
+          <h3>PHP</h3>
+          <div class="progress-bar"><div class="progress" id="progress-php" style="width:0%"></div></div>
+          <p id="php-status">0% concluído</p>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <button id="logoutBtn" class="btn ghost">Sair</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Codify</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

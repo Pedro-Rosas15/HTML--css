@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML &amp; CSS — Codify</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Codify</div>
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="languages.html">Linguagens</a>
+        <a href="painel.html">Painel</a>
+        <a href="login.html">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container page-layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <h3>HTML &amp; CSS</h3>
+        <p class="muted">Escolha um capítulo</p>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#introducao" data-chapter="introducao">Introdução</a>
+        <a href="#estrutura" data-chapter="estrutura">Estrutura básica</a>
+        <a href="#tags" data-chapter="tags">Tags fundamentais</a>
+        <a href="#imagens" data-chapter="imagens">Imagens e mídias</a>
+        <a href="#listas" data-chapter="listas">Listas e tabelas</a>
+        <a href="#formularios" data-chapter="formularios">Formulários</a>
+        <a href="#css-intro" data-chapter="css-intro">Introdução ao CSS</a>
+        <a href="#seletores" data-chapter="seletores">Seletores</a>
+        <a href="#boxmodel" data-chapter="boxmodel">Box model</a>
+        <a href="#flexbox" data-chapter="flexbox">Flexbox</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="toggleSidebar" class="btn small">Recolher</button>
+      </div>
+    </aside>
+
+    <main class="content">
+      <nav class="breadcrumb">Home › Linguagens › HTML &amp; CSS › Introdução</nav>
+
+      <article id="introducao" class="chapter">
+        <h1>Introdução</h1>
+        <p>Bem-vindo ao curso de <strong>HTML &amp; CSS</strong>. Este capítulo apresenta os conceitos fundamentais: o que é HTML, por que usamos semântica, e como o CSS separa estrutura de apresentação.</p>
+
+        <h2>Por que aprender HTML?</h2>
+        <p>HTML é a linguagem de marcação que estrutura o conteúdo na web. Entender sua semântica melhora a acessibilidade, a indexação pelos mecanismos de busca e a manutenção do código.</p>
+
+        <div class="example">
+          <div class="example-title">Exemplo — Estrutura básica</div>
+          <pre class="code-block">
+// código abaixo
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Meu site&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </pre>
+          <p class="code-meaning"><em>Significado:</em> indica a estrutura básica de um documento HTML5 — o que todo arquivo deve ter no começo.</p>
+        </div>
+
+        <p>Continue navegando pelo menu para ver capítulos completos com textos em estilo livro e exercícios práticos.</p>
+
+        <div class="chapter-actions">
+          <label><input type="checkbox" data-chapter-key="html-introducao" class="mark-read" /> Marcar como concluído</label>
+        </div>
+      </article>
+
+      <!-- outros capítulos (seções) -->
+      <article id="estrutura" class="chapter">
+        <h2>Estrutura básica</h2>
+        <p>Explicação longa e didática...</p>
+      </article>
+
+      <article id="tags" class="chapter">
+        <h2>Tags fundamentais</h2>
+        <p>Explicação longa e didática...</p>
+      </article>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 Codify</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

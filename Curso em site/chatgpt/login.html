@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Entrar — Codify</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Codify</div>
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="languages.html">Linguagens</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container auth-page">
+    <div class="auth-card">
+      <h2>Entrar</h2>
+      <p>Use apenas para demonstração — o login é salvo localmente neste navegador.</p>
+
+      <form id="loginForm">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required />
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required />
+
+        <div class="auth-actions">
+          <button type="submit" class="btn primary">Entrar</button>
+        </div>
+      </form>
+
+      <p class="muted">Obs: este é um login de demonstração. Para login real, integre com backend.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Codify</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
